@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="./tp08-operateur.js" defer="defer"></script>
+        <title>TP08 - Opération</title>
+    </head>
+    <body>
+        <h1>Opérations</h1>
+        <label for="number1">Entrez un nombre :</label>
+        <input type="text" id="number1">
+        <br>
+        <label for="number2">Entrez un second nombre :</label>
+        <input type="text" id="number2">
+        <br>
+        <label for="operator">Choisissez un opérateur :</label>
+        <select id="operator">
+            <option value="+"> + </option>
+            <option value="-"> - </option>
+            <option value="*"> * </option>
+            <option value="/"> / </option>
+        </select>
+        <br>
+        <button onclick="operation()">Calculer</button>
+        <p id="message"></p>   
+        <span id="resultat"></span>
+    </body>
+</html>
